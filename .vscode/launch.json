@@ -1,0 +1,15 @@
+{
+	"configurations": [
+		{
+			"type": "java",
+			"name": "Spring Boot-SplitwiseApplication<splitwise>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"console": "internalConsole",
+			"mainClass": "org.iiitb.splitwise.SplitwiseApplication",
+			"projectName": "splitwise",
+			"args": "",
+			"envFile": "${workspaceFolder}/.env"
+		}
+	]
+}
