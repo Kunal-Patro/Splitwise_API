@@ -56,9 +56,9 @@ class SplitwiseApplicationTests {
 		request.setEmail("kunal@gmail.com");
 		request.setPassword(randomPassword);
 
-		log.info("Valid input : " + request);
+		log.info("invalid input : " + request);
 		User response = restTemplate.postForObject(loginURL, request, User.class);
-		log.info("Valid output : " + response);
+		log.info("invalid output : " + response);
 		Assert.assertNull(response);
 	}
 	@Test
@@ -71,9 +71,9 @@ class SplitwiseApplicationTests {
 		request.setEmail(randomEmail);
 		request.setPassword("password");
 
-		log.info("Valid input : " + request);
+		log.info("invalid input : " + request);
 		User response = restTemplate.postForObject(loginURL, request, User.class);
-		log.info("Valid output : " + response);
+		log.info("invalid output : " + response);
 		Assert.assertNull(response);
 	}
 	@Test
@@ -99,9 +99,9 @@ class SplitwiseApplicationTests {
 		request.setPassword("sample5");
 		request.setName("sample");
 		request.setEmail(randomEmail);
-		log.info("Valid input : " + request);
+		log.info("invalid input : " + request);
 		User response = restTemplate.postForObject(registrationURL, request, User.class);
-		log.info("Valid output : " + response);
+		log.info("invalid output : " + response);
 		Assert.assertNull(response);
 	}
 	@Test
@@ -113,9 +113,9 @@ class SplitwiseApplicationTests {
 		request.setPassword("sample56789");
 		request.setName("sample");
 		request.setEmail(randomEmail);
-		log.info("Valid input : " + request);
+		log.info("invalid input : " + request);
 		User response = restTemplate.postForObject(registrationURL, request, User.class);
-		log.info("Valid output : " + response);
+		log.info("invalid output : " + response);
 		Assert.assertNull(response);
 	}
 
